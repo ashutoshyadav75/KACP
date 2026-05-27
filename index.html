@@ -1,101 +1,248 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashutosh Career Point</title>
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashutosh Career Point</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<!-- WhatsApp Button -->
-<a href="https://wa.me/9580674140" class="whatsapp-btn" target="_blank">
-    💬
-</a>
+
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Ashutosh Career Point</h2>
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        Ashutosh <span>Career Point</span>
+      </div>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#info">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#query">Query</a></li>
+      </ul>
 
-            <div class="menu-toggle" id="menuToggle">
-                ☰
-            </div>
-        </nav>
-    </header>
+      <div class="menu-btn" id="menuBtn">
+        ☰
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to Ashutosh Career Point</h1>
-            <p>Your Success Starts Here</p>
-            <a href="#courses" class="btn">Explore Courses</a>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Build Your Bright Future</h1>
+      <p>
+        India's Modern Coaching Institute for JEE, NEET, Boards & Coding.
+      </p>
 
-    <!-- Courses Section -->
-    <section class="courses" id="courses">
-        <h2>Our Courses</h2>
+      <div class="hero-buttons">
+        <a href="#admission" class="btn primary-btn">Take Admission</a>
+        <a href="#query" class="btn secondary-btn">Ask Query</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="course-container">
+  <!-- Coaching Info -->
+  <section class="info section" id="info">
 
-            <div class="course-card">
-                <h3>Class 9th & 10th</h3>
-                <p>Complete preparation for board exams.</p>
-            </div>
+    <div class="section-title">
+      <h2>Why Choose Us?</h2>
+      <p>Modern education with smart learning system.</p>
+    </div>
 
-            <div class="course-card">
-                <h3>Class 11th & 12th</h3>
-                <p>Science, Commerce & Arts coaching available.</p>
-            </div>
+    <div class="info-container">
 
-            <div class="course-card">
-                <h3>Competitive Exams</h3>
-                <p>Preparation for NEET, JEE, SSC and Banking.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Us</h2>
+      <div class="info-card">
+        <div class="icon">📚</div>
+        <h3>Expert Faculty</h3>
         <p>
-            Ashutosh Career Point is a leading coaching institute dedicated to helping students achieve academic excellence with expert guidance and quality education.
+          Learn from highly experienced teachers and mentors.
         </p>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
+      <div class="info-card">
+        <div class="icon">💻</div>
+        <h3>Smart Classes</h3>
+        <p>
+          Digital classrooms with interactive learning methods.
+        </p>
+      </div>
 
-        <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+      <div class="info-card">
+        <div class="icon">🎯</div>
+        <h3>Regular Tests</h3>
+        <p>
+          Weekly mock tests and performance analysis.
+        </p>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Ashutosh Career Point | All Rights Reserved</p>
-    </footer>
-    <section class="social-media">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-Hello this is my page
+      <div class="info-card">
+        <div class="icon">🏆</div>
+        <h3>Top Results</h3>
+        <p>
+          Thousands of successful students every year.
+        </p>
+      </div>
 
-<a href="www.google.com"> Google</a>
-hello Ashutosh Career Point
-<a href="www.pgi.in">Prasad Institute of Technology , Jaunpur</a>
-    <script src="index.js"></script>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery section" id="gallery">
+
+    <div class="section-title">
+      <h2>Gallery</h2>
+      <p>Our classrooms and student activities.</p>
+    </div>
+
+    <div class="gallery-container">
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Admission Form -->
+  <section class="admission section" id="admission">
+
+    <div class="section-title">
+      <h2>Admission Form</h2>
+      <p>Fill your details to join our coaching.</p>
+    </div>
+
+    <div class="form-container">
+
+      <form id="admissionForm">
+
+        <div class="input-box">
+          <input type="text" placeholder="Student Name" required>
+        </div>
+
+        <div class="input-box">
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+          <input type="tel" placeholder="Mobile Number" required>
+        </div>
+
+        <div class="input-box">
+          <select required>
+            <option value="">Select Course</option>
+            <option>JEE</option>
+            <option>NEET</option>
+            <option>Foundation</option>
+            <option>Coding</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <textarea placeholder="Your Address"></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn">
+          Submit Admission
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Query Section -->
+  <section class="query section" id="query">
+
+    <div class="section-title">
+      <h2>Ask Your Query</h2>
+      <p>We will contact you soon.</p>
+    </div>
+
+    <div class="form-container">
+
+      <form id="queryForm">
+
+        <div class="input-box">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-box">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="input-box">
+          <textarea placeholder="Write Your Query"></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn">
+          Send Query
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <h2>Ashutosh Career Point</h2>
+
+    <p>
+      Varanasi, Uttar Pradesh | +91 9876543210
+    </p>
+
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919876543210" class="whatsapp-btn">
+    💬
+  </a>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
