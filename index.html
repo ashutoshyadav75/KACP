@@ -222,7 +222,7 @@
     <h2>Ashutosh Career Point</h2>
 
     <p>
-      Varanasi, Uttar Pradesh | +91 9876543210
+      Varanasi, Uttar Pradesh | +91 9580674140
     </p>
 
     <div class="socials">
@@ -238,12 +238,34 @@
   </footer>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/919876543210" class="whatsapp-btn">
+  <a href="https://wa.me/9580674140" class="whatsapp-btn">
     💬
   </a>
 
   <script src="index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDxU0R9kmjzDoIVnWI5yASqqvIHf0mCNA0",
+    authDomain: "ashutoshcarrerpoint.firebaseapp.com",
+    projectId: "ashutoshcarrerpoint",
+    storageBucket: "ashutoshcarrerpoint.firebasestorage.app",
+    messagingSenderId: "949776920458",
+    appId: "1:949776920458:web:d3ae0c1601904f30dfe273",
+    measurementId: "G-XSCCYMB0R5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<script src="firebase.js"></script>
 </body>
 </html>
