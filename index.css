@@ -32,6 +32,48 @@ body{
   color:#cbd5e1;
 }
 
+/* Buttons */
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.btn{
+  padding:14px 32px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.4s;
+  border:none;
+  cursor:pointer;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-width:180px;
+  text-align:center;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+  .hero-buttons{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .btn{
+    width:100%;
+    max-width:320px;
+  }
+
+}
+
 /* Navbar */
 
 .header{
