@@ -608,6 +608,91 @@ textarea{
     border-radius:25px;
 }
 
+.chat-container{
+
+    max-width:700px;
+    margin:auto;
+
+    background:#0f172a;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.chat-header{
+
+    background:#38bdf8;
+
+    color:black;
+
+    padding:20px;
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+#chat-box{
+
+    height:400px;
+
+    overflow-y:auto;
+
+    padding:20px;
+}
+
+.message{
+
+    margin:10px 0;
+
+    padding:12px;
+
+    border-radius:12px;
+}
+
+.user{
+
+    background:#38bdf8;
+
+    color:black;
+
+    text-align:right;
+}
+
+.bot{
+
+    background:#1e293b;
+
+    color:white;
+}
+
+.chat-input{
+
+    display:flex;
+}
+
+.chat-input input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+}
+
+.chat-input button{
+
+    padding:15px 25px;
+
+    background:#38bdf8;
+
+    border:none;
+
+    cursor:pointer;
+}
 /* WhatsApp */
 
 .whatsapp-btn{

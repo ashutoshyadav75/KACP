@@ -290,3 +290,66 @@ function showRegister(){
     .getElementById("registerForm")
     .style.display="block";
 }
+
+function sendMessage(){
+
+    let input =
+    document.getElementById("userInput");
+
+    let userText =
+    input.value.toLowerCase();
+
+    let chatBox =
+    document.getElementById("chat-box");
+
+    chatBox.innerHTML +=
+    `<div class="message user">${userText}</div>`;
+
+    let reply = "";
+
+    if(userText.includes("jee")){
+
+        reply =
+        "JEE is best for engineering aspirants.";
+
+    }
+
+    else if(userText.includes("neet")){
+
+        reply =
+        "NEET is for students interested in medical careers.";
+
+    }
+
+    else if(userText.includes("java")){
+
+        reply =
+        "Java Full Stack has excellent career opportunities in software development.";
+
+    }
+
+    else if(userText.includes("b.tech")){
+
+        reply =
+        "After B.Tech you can pursue placements, higher studies, or software development careers.";
+
+    }
+
+    else{
+
+        reply =
+        "Please contact ACP counselor for detailed guidance.";
+    }
+
+    setTimeout(()=>{
+
+        chatBox.innerHTML +=
+        `<div class="message bot">${reply}</div>`;
+
+        chatBox.scrollTop =
+        chatBox.scrollHeight;
+
+    },500);
+
+    input.value="";
+}
