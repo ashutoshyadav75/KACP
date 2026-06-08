@@ -353,3 +353,43 @@ function sendMessage(){
 
     input.value="";
 }
+
+const themeBtn =
+document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", ()=>{
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+
+        themeBtn.innerHTML = "☀️";
+
+        localStorage.setItem(
+            "theme",
+            "light"
+        );
+
+    }
+
+    else{
+
+        themeBtn.innerHTML = "🌙";
+
+        localStorage.setItem(
+            "theme",
+            "dark"
+        );
+    }
+
+});
+
+if(localStorage.getItem("theme") === "light"){
+
+    document.body.classList.add("light-mode");
+
+    document.getElementById(
+        "themeToggle"
+    ).innerHTML = "☀️";
+
+}

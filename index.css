@@ -811,3 +811,51 @@ textarea{
   }
 
 }
+
+/* Theme Button */
+
+.theme-btn{
+    padding:10px 15px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+    background:#38bdf8;
+    color:black;
+    transition:0.3s;
+}
+
+.theme-btn:hover{
+    transform:scale(1.1);
+}
+
+/* Light Theme */
+
+body.light-mode{
+    background:#f8fafc;
+    color:#0f172a;
+}
+
+body.light-mode .header{
+    background:rgba(255,255,255,0.9);
+}
+
+body.light-mode .info-card,
+body.light-mode .course-card,
+body.light-mode .video-card,
+body.light-mode .material-card,
+body.light-mode .faculty-card,
+body.light-mode .topper-card{
+    background:white;
+    color:#0f172a;
+    border:1px solid #e2e8f0;
+}
+
+body.light-mode .footer{
+    background:#e2e8f0;
+    color:#0f172a;
+}
+
+body.light-mode .section-title p{
+    color:#475569;
+}
