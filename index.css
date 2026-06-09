@@ -435,6 +435,85 @@ textarea{
   }
 
 }
+
+/* Notice Board */
+
+.notice-section{
+
+    padding:20px 0;
+
+    background:#020617;
+
+    overflow:hidden;
+}
+
+.notice-title{
+
+    text-align:center;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:#38bdf8;
+}
+
+.notice-board{
+
+    width:100%;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.05);
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+    padding:15px 0;
+}
+
+.notice-track{
+
+    display:flex;
+
+    gap:80px;
+
+    width:max-content;
+
+    animation:scrollNotice 25s linear infinite;
+}
+
+.notice-track span{
+
+    white-space:nowrap;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:white;
+}
+
+@keyframes scrollNotice{
+
+    from{
+        transform:translateX(100%);
+    }
+
+    to{
+        transform:translateX(-100%);
+    }
+
+}
+
+.notice-board:hover .notice-track{
+
+    animation-play-state:paused;
+}
+
 /* Authentication Section */
 
 .auth-section{
